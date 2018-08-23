@@ -1,22 +1,35 @@
+// Modulos
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from '../app/shared/shared.module';
+import { ComponentModule } from '../app/componentes/components.module';
 
 
+// Rutas
+import { APP_ROUTING } from './app.routes';
+
+// Componentes
 import { AppComponent } from './app.component';
-// import { NavbarComponent } from './shared/navbar/navbar.component';
+import { HomeComponent } from './pages/home/home.component';
+import { CategoriaComponent } from './pages/categoria/categoria.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    // NavbarComponent
+    HomeComponent,
+    CategoriaComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    SharedModule
+    SharedModule,
+    ComponentModule,
+    APP_ROUTING
   ],
   providers: [],
   bootstrap: [AppComponent]
