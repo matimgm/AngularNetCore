@@ -1,4 +1,89 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div id="flipkart-navbar">
+    <div class="container" style="margin-top: 0px !important;">
+        <div class="row row2">
+            <div class="col-2">
+                <h2 style="margin:0px;"><span class="smallnav menu" (click)="openNav()">☰</span></h2>
+                <h1 style="margin:0px;"><span class="largenav">
+                         <a class="navbar-brand" href="#" style="color: #fff;">
+                            <img src="../../../assets/Imagenes/logo.png" class="img-fluid" width="50" height="50" alt=""> E-Shop
+                        </a>
+                    </span>
+                </h1>
+            </div>
+            <div class="flipkart-navbar-search smallsearch col-sm-8 col-xs-11">
+                <div class="row">
+                    <input class="flipkart-navbar-input col col-sm-11" type="" placeholder="Buscar" name="">
+                    <button class="flipkart-navbar-button col col-sm-1"> 
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="cart largenav col-2">
+                <a class="cart-button">
+                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                    <span class="item-number ">0</span>
+                </a>
+            </div>
+        </div>
+        <!-- <div class="row row1">
+            <ul class="largenav pull-right">
+                <li class="upper-links"><a class="links" href="#">Link 1</a></li>
+                <li class="upper-links"><a class="links" href="https://campusbox.org/">Link 2</a></li>
+                <li class="upper-links"><a class="links" href="#">Link 3</a></li>
+                <li class="upper-links"><a class="links" href="#">Link 4</a></li>
+                <li class="upper-links"><a class="links" href="#">Link 5</a></li>
+                <li class="upper-links"><a class="links" href="#">Link 6</a></li>
+                <li class="upper-links">
+                    <a class="links" href="#">
+                        <svg class="" width="16px" height="12px" style="overflow: visible;">
+                            <path d="M8.037 17.546c1.487 0 2.417-.93 2.417-2.417H5.62c0 1.486.93 2.415 2.417 2.415m5.315-6.463v-2.97h-.005c-.044-3.266-1.67-5.46-4.337-5.98v-.81C9.01.622 8.436.05 7.735.05 7.033.05 6.46.624 6.46 1.325v.808c-2.667.52-4.294 2.716-4.338 5.98h-.005v2.972l-1.843 1.42v1.376h14.92v-1.375l-1.842-1.42z" fill="#fff"></path>
+                        </svg> 
+        </a>
+        </li>
+        <li class="upper-links dropdown"><a class="links" href="#">Dropdown</a>
+            <ul class="dropdown-menu">
+                <li class="profile-li"><a class="profile-links" href="http://yazilife.com/">Link</a></li>
+                <li class="profile-li"><a class="profile-links" href="http://hacksociety.tech/">Link</a></li>
+                <li class="profile-li"><a class="profile-links" href="#">Link</a></li>
+                <li class="profile-li"><a class="profile-links" href="#">Link</a></li>
+                <li class="profile-li"><a class="profile-links" href="#">Link</a></li>
+                <li class="profile-li"><a class="profile-links" href="#">Link</a></li>
+                <li class="profile-li"><a class="profile-links" href="#">Link</a></li>
+            </ul>
+        </li>
+        </ul>
+    </div> -->
+    </div>
+</div>
+<div id="mySidenav" class="sidenav">
+    <div class="container" style="background-color: #2874f0; padding-top: 10px;">
+        <span class="sidenav-heading">Home</span>
+        <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">×</a>
+    </div>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+</div>
+<!-- <script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "70%";
+        // document.getElementById("flipkart-navbar").style.width = "50%";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.body.style.backgroundColor = "rgba(0,0,0,0)";
+    }
+</script> -->
+
+
+
+
+
+
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">
         <img src="../../../assets/Imagenes/logo.png" class="img-fluid" width="50" height="50" alt=""> E-Shop
     </a>
@@ -19,4 +104,4 @@
             <button class="btn btn-outline-success my-2 my-sm-0" type="button">Buscar</button>
         </form>
     </div>
-</nav>
+</nav> -->

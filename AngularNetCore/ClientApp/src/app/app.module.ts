@@ -5,6 +5,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from '../app/shared/shared.module';
 import { ComponentModule } from '../app/componentes/components.module';
 
+// Servicios
+import { ProductosService } from './services/productos.servie';
 
 // Rutas
 import { APP_ROUTING } from './app.routes';
@@ -14,8 +16,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { CategoriaComponent } from './pages/categoria/categoria.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
-
-
 
 @NgModule({
   declarations: [
@@ -31,7 +31,9 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
     ComponentModule,
     APP_ROUTING
   ],
-  providers: [],
+  providers: [
+    ProductosService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

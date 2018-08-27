@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
-import { NavbarComponent } from './navbar/navbar.component';
 import { PaginaErrorComponent } from './pagina-error/pagina-error.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
     declarations: [
-        PaginaErrorComponent
+        PaginaErrorComponent,
+        FooterComponent
       ],
     exports: [
+        FooterComponent
     ]
 })
 

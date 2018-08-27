@@ -7,11 +7,11 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
-  public values: string[];
-  constructor(private http: HttpClient) {
-    this.http.get('/api/values').subscribe(result => {
-      this.values = result as string[];
-    }, error => console.error(error));
-  }
+  // title = 'app';
+  // public values: string[];
+  // constructor(private http: HttpClient) {
+  //   this.http.get('/api/values').subscribe(result => {
+  //     this.values = result as string[];
+  //   }, error => console.error(error));
+  // }
 }

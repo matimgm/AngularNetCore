@@ -1,4 +1,28 @@
 <div class="row">
+    <div class="col-md-3" *ngFor="let producto of productos">
+        <div class="ibox">
+            <div class="ibox-content product-box">
+                <div class="product-imitation">
+                    [ IMAGEN ]
+                </div>
+                <div class="product-desc">
+                    <span class="product-price">{{ producto.Precio }}</span>
+                    <small class="text-muted">{{ producto.Categoria.Descripcion }}</small>
+                    <a href="#" class="product-name">{{ producto.Descripcion }} </a>
+                    <div class="small m-t-xs">
+                        sub descripcion
+                    </div>
+                    <div class="m-t text-righ">
+                        <a href="#" class="btn btn-xs btn-outline btn-primary">Ver<i class="fa fa-long-arrow-right"></i> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
     <div class="col-md-3">
         <div class="ibox">
             <div class="ibox-content product-box">

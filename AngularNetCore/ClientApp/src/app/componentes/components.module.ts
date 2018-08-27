@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { ProductosComponent } from './productos/productos.component';
 import { CarouselProductosComponent } from './carousel-productos/carousel-productos.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
     declarations: [
@@ -10,7 +11,8 @@ import { CarouselProductosComponent } from './carousel-productos/carousel-produc
     exports: [
         ProductosComponent,
         CarouselProductosComponent
-    ]
+    ],
+    imports: [CommonModule]
 })
 
 export class ComponentModule { }
