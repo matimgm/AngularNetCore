@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductosService } from '../../services/productos.servie';
 import { Producto } from '../../services/Interfaces/GestionProductosInterface/producto.interface';
+import { Observable } from 'rxjs';
+// import { map } from 'rxjs/operators';
+// import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-productos',
@@ -9,33 +12,27 @@ import { Producto } from '../../services/Interfaces/GestionProductosInterface/pr
 })
 export class ProductosComponent implements OnInit {
 
-  public productos: Producto[] = [];
-
+  // public productos: Producto[] = [];
+  productos$: Observable<Producto[]>;
+  productos: Producto[];
+  listProcutos$: Producto[];
 
   constructor(private _productosService: ProductosService) { }
 
   ngOnInit() {
-    // this._productosService.getProductos().then(data => {
-    //   console.log(data);
-    // });
-    console.log('Productos: ', this.productos);
-
-     this.productos = this._productosService.getProductos();
-    // console.log(this.productos);
-    // this.buscarProductos()
-    //   .then( res => console.log(this.productos))
-    //   .catch(err => console.log('Error: !!', err));
-    // this.productos = this.productosPrueba;
-    // console.log('Productos = ', this.productos);
+      this.obtenerProductos();
   }
 
-  // buscarProductos(): Promise<Boolean> {
-  //   return new Promise( (resolve, rejet) => {
-  //     this.productos = this._productosService.getProductos();
-  //     if (this.productos.length !== 0) {
-  //       resolve(true);
-  //     }
-  //   });
+  obtenerProductos(): void {
+    this._productosService.getProductos()
+      .subscribe(productos => {
+          this.productos = productos;
+      });
+  }
+  // getProductoParse(): Observable<Array<any>> {
+  //   return this._productosService
+  //               .getProductos()
+  //               .pipe(map(response => response));
   // }
 }
 

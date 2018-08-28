@@ -20,7 +20,7 @@ namespace AngularNetCore.Controllers.DatosFalsos
 
             //TV
             ultimosProductos.Add(new Model.Productos { Id = 1, Descripcion = "Smart TV Samsung 40 Full HD", Categoria = listCategoria.Find(x => x.Id == 1), Marca = listMarcas.Find(x => x.Id == 1), Precio = 1000, FechaAlta = fechaHoy });
-            ultimosProductos.Add(new Model.Productos { Id = 2, Descripcion = "Smart TV Philips 32", Categoria = listCategoria.Find(x => x.Id == 1), Marca = listMarcas.Find(x => x.Id == 2), Precio = 1000 });
+            ultimosProductos.Add(new Model.Productos { Id = 2, Descripcion = "Smart TV Philips 32", Categoria = listCategoria.Find(x => x.Id == 1), Marca = listMarcas.Find(x => x.Id == 2), Precio = 1000, FechaAlta = fechaHoy });
             ultimosProductos.Add(new Model.Productos { Id = 3, Descripcion = "TV LED Noblex 32", Categoria = listCategoria.Find(x => x.Id == 1), Marca = listMarcas.Find(x => x.Id == 3), Precio = 1000 });
 
 

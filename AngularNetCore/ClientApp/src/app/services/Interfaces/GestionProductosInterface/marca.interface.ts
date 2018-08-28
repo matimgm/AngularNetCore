@@ -1,4 +1,4 @@
 export interface Marca {
-    Id: string;
-    Descripcion: string;
+    id: string;
+    descripcion: string;
 }
